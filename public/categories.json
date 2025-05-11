@@ -1,0 +1,43 @@
+
+
+
+
+
+
+[
+  {
+    "id": 1,
+    "category": "All Products",
+    "slug": "all-products"
+  },
+  {
+    "id": 2,
+    "category": "Laptops",
+    "slug": "laptops"
+  },
+  {
+    "id": 3,
+    "category": "Phones",
+    "slug": "phones"
+  },
+  {
+    "id": 4,
+    "category": "Accessories",
+    "slug": "accessories"
+  },
+  {
+    "id": 5,
+    "category": "Smartwatches",
+    "slug": "smartwatches"
+  },
+  {
+    "id": 6,
+    "category": "MacBooks",
+    "slug": "macbooks"
+  },
+  {
+    "id": 7,
+    "category": "iPhones",
+    "slug": "iphones"
+  }
+]
