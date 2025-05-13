@@ -19,7 +19,7 @@ const Home = () => {
       </div>
 
       {/* Floating banner image with rounded corners */}
-      <div className="flex justify-center -mt-20 z-10 relative">
+      <div className="flex justify-center -mt-1 z-10 relative">
         <img
           src={bannerImg}
           alt="Banner"
