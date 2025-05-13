@@ -29,7 +29,7 @@ const Home = () => {
 
       {/* Title */}
       <h1 className="text-2xl font-semibold text-center mt-10">
-        Explore Cutting-Edge Gadgets
+        Explore Cutting-Edge Gadgets testing 1....
       </h1>
     </div>
   );
