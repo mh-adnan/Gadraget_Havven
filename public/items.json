@@ -2,7 +2,7 @@
   {
     "id": 1,
     "product_title": "Dell XPS 13",
-    "image": "https://i.ibb.co.com/dbQtK8C/i-Phone-14-Pro-Deep-Purple-7300.jpg",
+    "image": "https://i.postimg.cc/4304wvD3/Dell-XPS-13.jpg",
     "category": "Laptops",
     "price": 999.99,
     "description": "A high-performance laptop with a sleek design.",
@@ -18,7 +18,7 @@
   {
     "id": 2,
     "product_title": "Apple MacBook Air (M1, 2020)",
-    "image": "https://i.ibb.co.com/dbQtK8C/i-Phone-14-Pro-Deep-Purple-7300.jpg",
+    "image": "https://i.postimg.cc/yNZ24FJx/Mac-Book-Air15.webp",
     "category": "Laptops",
     "price": 999.99,
     "description": "Lightweight and powerful with a Retina display.",
@@ -34,7 +34,7 @@
   {
     "id": 3,
     "product_title": "Apple MacBook Pro 13\" (M1, 2020)",
-    "image": "https://i.ibb.co.com/dbQtK8C/i-Phone-14-Pro-Deep-Purple-7300.jpg",
+    "image": "https://i.postimg.cc/bNV5Z6kd/refurb-mbp13-silver-m1-2020.jpg",
     "category": "Laptops",
     "price": 1299.99,
     "description": "Professional laptop with a stunning Retina display.",
@@ -50,7 +50,7 @@
   {
     "id": 4,
     "product_title": "Apple MacBook Pro 16\" (2021)",
-    "image": "https://i.ibb.co.com/dbQtK8C/i-Phone-14-Pro-Deep-Purple-7300.jpg",
+    "image": "https://i.postimg.cc/xdMpFn7b/hero-intro-endframe-e6khcva4hkeq-large.jpg",
     "category": "Laptops",
     "price": 2399.99,
     "description": "The ultimate pro laptop for professionals.",
@@ -66,7 +66,7 @@
   {
     "id": 5,
     "product_title": "Apple iPhone 13",
-    "image": "https://i.ibb.co.com/dbQtK8C/i-Phone-14-Pro-Deep-Purple-7300.jpg",
+    "image": "https://i.postimg.cc/NGJDDKMz/13-pro-max-500x500.webp",
     "category": "iPhones",
     "price": 799.99,
     "description": "The latest iPhone with advanced camera features.",
@@ -82,7 +82,7 @@
   {
     "id": 6,
     "product_title": "Apple iPhone 13 Pro",
-    "image": "https://i.ibb.co.com/dbQtK8C/i-Phone-14-Pro-Deep-Purple-7300.jpg",
+    "image": "https://i.postimg.cc/66mVRFbs/Apple-i-Phone-13-Pro-Max-Graphite.jpg",
     "category": "iPhones",
     "price": 999.99,
     "description": "Professional-grade camera with ProMotion display.",
@@ -98,7 +98,7 @@
   {
     "id": 7,
     "product_title": "Apple iPhone 12",
-    "image": "https://i.ibb.co.com/dbQtK8C/i-Phone-14-Pro-Deep-Purple-7300.jpg",
+    "image": "https://i.postimg.cc/wjhDCMqH/apple-iphone-12-2-up-geo-10132020-inline-jpg-large.jpg",
     "category": "iPhones",
     "price": 699.99,
     "description": "Powerful performance and amazing battery life.",
@@ -114,7 +114,7 @@
   {
     "id": 8,
     "product_title": "Apple iPhone SE (2022)",
-    "image": "https://i.ibb.co.com/dbQtK8C/i-Phone-14-Pro-Deep-Purple-7300.jpg",
+    "image": "https://i.postimg.cc/7hFTc8jf/Apple-new-iphone-se-white-04152020-big-jpg-large.jpg",
     "category": "iPhones",
     "price": 499.99,
     "description": "The most affordable iPhone with powerful features.",
@@ -130,7 +130,7 @@
   {
     "id": 9,
     "product_title": "Razer Blade 15",
-    "image": "https://i.ibb.co.com/dbQtK8C/i-Phone-14-Pro-Deep-Purple-7300.jpg",
+    "image": "https://i.postimg.cc/mrLmLJgP/razer-blade-15-advanced-model-i7-11th-gen-rtx3070-gaming-laptop-600x500h-jpg.webp",
     "category": "Laptops",
     "price": 1999.99,
     "description": "Powerful gaming laptop with an ultra-thin design.",
@@ -146,7 +146,7 @@
   {
     "id": 10,
     "product_title": "Apple Watch Series 7",
-    "image": "https://i.ibb.co.com/dbQtK8C/i-Phone-14-Pro-Deep-Purple-7300.jpg",
+    "image": "https://i.postimg.cc/VsrDkjmW/Apple-Watch-Series-7.jpg",
     "category": "Smartwatches",
     "price": 399.99,
     "description": "The most advanced Apple Watch yet with a larger display.",
@@ -162,7 +162,7 @@
   {
     "id": 11,
     "product_title": "Samsung Galaxy Watch 4",
-    "image": "https://i.ibb.co.com/dbQtK8C/i-Phone-14-Pro-Deep-Purple-7300.jpg",
+    "image": "https://i.postimg.cc/26qF3DRS/Galaxy-Watch-4-Classic-600x600.png",
     "category": "Smartwatches",
     "price": 249.99,
     "description": "Stylish smartwatch with health tracking features.",
@@ -178,7 +178,7 @@
   {
     "id": 12,
     "product_title": "Anker Wireless Charger",
-    "image": "https://i.ibb.co.com/dbQtK8C/i-Phone-14-Pro-Deep-Purple-7300.jpg",
+    "image": "https://i.postimg.cc/d03GSY0j/Anker-5-W-Wireless-Charging-Pad.jpg",
     "category": "Accessories",
     "price": 29.99,
     "description": "Fast wireless charging for your devices.",
@@ -194,7 +194,7 @@
   {
     "id": 13,
     "product_title": "Apple AirPods Pro",
-    "image": "https://i.ibb.co.com/dbQtK8C/i-Phone-14-Pro-Deep-Purple-7300.jpg",
+    "image": "https://i.postimg.cc/RVmKxfFF/Air-Pods-Pro-2nd-generation-c-1370.jpg",
     "category": "Accessories",
     "price": 249.99,
     "description": "Active Noise Cancellation with a customizable fit.",
@@ -209,7 +209,7 @@
   {
     "id": 14,
     "product_title": "Sony WH-1000XM4",
-    "image": "https://i.ibb.co.com/dbQtK8C/i-Phone-14-Pro-Deep-Purple-7300.jpg",
+    "image": "https://i.postimg.cc/dVtCLYGc/2097-43505.jpg",
     "category": "Accessories",
     "price": 349.99,
     "description": "Industry-leading noise canceling wireless headphones.",
@@ -224,8 +224,8 @@
   },
   {
     "id": 15,
-    "product_title": "Google Pixel 6",
-    "image": "https://i.ibb.co.com/dbQtK8C/i-Phone-14-Pro-Deep-Purple-7300.jpg",
+    "product_title": "iPhone 16 pro",
+    "image": "https://i.postimg.cc/rm36tMDn/i-Phone-16-Pro-Max-16-Pro-Black-Titanium-2734.jpg",
     "category": "iPhones",
     "price": 599.99,
     "description": "The latest Google phone with AI features.",
@@ -240,8 +240,8 @@
   },
   {
     "id": 16,
-    "product_title": "OnePlus 9",
-    "image": "https://i.ibb.co.com/dbQtK8C/i-Phone-14-Pro-Deep-Purple-7300.jpg",
+    "product_title": "iPhone 15 pro max",
+    "image": "https://i.postimg.cc/1Xwdn6hX/iphone-15-pro-max-256gb2-800x800.jpg",
     "category": "iPhones",
     "price": 729.99,
     "description": "Fast and smooth with a Hasselblad camera.",
@@ -259,7 +259,7 @@
   {
     "id": 17,
     "product_title": "Samsung Galaxy S23",
-    "image": "https://i.ibb.co.com/dbQtK8C/i-Phone-14-Pro-Deep-Purple-7300.jpg",
+    "image": "https://i.postimg.cc/RZF3vTzM/Galaxy-S23-Lavender-4600.jpg",
     "category": "Phones",
     "price": 799.99,
     "description": "The flagship Samsung phone with a stunning display.",
@@ -275,7 +275,7 @@
   {
     "id": 18,
     "product_title": "Samsung Galaxy A40",
-    "image": "https://i.ibb.co.com/dbQtK8C/i-Phone-14-Pro-Deep-Purple-7300.jpg",
+    "image": "https://i.postimg.cc/C5S1XGNp/images-1.jpg",
     "category": "Phones",
     "price": 299.99,
     "description": "Affordable smartphone with great features.",
@@ -291,7 +291,7 @@
   {
     "id": 19,
     "product_title": "Samsung Galaxy M31",
-    "image": "https://i.ibb.co.com/dbQtK8C/i-Phone-14-Pro-Deep-Purple-7300.jpg",
+    "image": "https://i.postimg.cc/kMvD8HJJ/Samsung-Galaxy-M31-black.webp",
     "category": "Phones",
     "price": 249.99,
     "description": "Powerful battery and great performance at an affordable price.",
@@ -308,7 +308,7 @@
   {
     "id": 20,
     "product_title": "MacBook Air M1",
-    "image": "https://i.ibb.co/dbQtK8C/i-Phone-14-Pro-Deep-Purple-7300.jpg",
+    "image": "https://i.postimg.cc/gJqcVwPS/apple-macbook-air-late-2020-apple-m1-chip-8gb-51607861924.webp",
     "category": "MacBooks",
     "price": 999.99,
     "description": "Powerful battery and great performance with the Apple M1 chip.",
@@ -324,7 +324,7 @@
   {
     "id": 21,
     "product_title": "MacBook Pro 14\" M1 Pro",
-    "image": "https://i.ibb.co/dbQtK8C/i-Phone-14-Pro-Deep-Purple-7300.jpg",
+    "image": "https://i.postimg.cc/y8gVfpHS/images-2.jpg",
     "category": "MacBooks",
     "price": 1999.99,
     "description": "High-performance laptop for professionals with M1 Pro chip.",
@@ -340,7 +340,7 @@
   {
     "id": 22,
     "product_title": "MacBook Pro 16\" M1 Max",
-    "image": "https://i.ibb.co/dbQtK8C/i-Phone-14-Pro-Deep-Purple-7300.jpg",
+    "image": "https://i.postimg.cc/W3XLp0Vv/Mac-Book166666666.jpg",
     "category": "MacBooks",
     "price": 3499.99,
     "description": "Ultimate performance with M1 Max chip, designed for creators.",
@@ -356,7 +356,7 @@
   {
     "id": 23,
     "product_title": "MacBook Air 2022",
-    "image": "https://i.ibb.co/dbQtK8C/i-Phone-14-Pro-Deep-Purple-7300.jpg",
+    "image": "https://i.postimg.cc/Qd5292DS/images-3.jpg",
     "category": "MacBooks",
     "price": 1199.99,
     "description": "Lightweight and powerful, perfect for everyday tasks.",
