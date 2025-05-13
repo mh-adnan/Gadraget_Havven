@@ -25,12 +25,15 @@ const Home = () => {
           alt="Banner"
           className="w-3/4 max-w-4xl rounded-lg shadow-xl border-4 border-white"
         />
+        
       </div>
 
       {/* Title */}
-      <h1 className="text-2xl font-semibold text-center mt-10">
+
+        <h1 className="text-2xl font-semibold text-center mt-10">
         Explore Cutting-Edge Gadgets
       </h1>
+     
     </div>
   );
 };

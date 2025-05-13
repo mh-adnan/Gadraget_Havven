@@ -16,9 +16,17 @@ function App() {
         <Route path="db" element={<Dashbord/>} />
         <Route path="ac" element={<Accessories/>} />
         <Route path="st" element={<Statistics/>} />
+        {/* <Route path="/" element={<CategoryWithProducts />} />
+        <Route path="/product/:id" element={<ProductDetails />} /> */}
       </Route>
     </Routes>
   );
 }
 
 export default App;
+
+
+
+
+
+
