@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
 
 const Accessories = () => {
@@ -6,18 +7,17 @@ const Accessories = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Fetch items.json from your API
-    fetch('../../public/items.json') // আপনার API বা JSON ফাইলের পাথ দিন
+    fetch('../../public/items.json')
       .then(response => response.json())
       .then(data => {
-        setAccessories(data); // API থেকে পাওয়া ডাটা set করা
-        setLoading(false); // লোডিং কমপ্লিট
+        setAccessories(data);
+        setLoading(false);
       })
       .catch(err => {
-        setError('Failed to load items.'); // যদি কোনো এরর হয়
-        setLoading(false); // লোডিং বন্ধ করা
+        setError('Failed to load items.');
+        setLoading(false);
       });
-  }, []); // এটি একবারই রান হবে যখন কম্পোনেন্ট প্রথম রেন্ডার হবে
+  }, []); 
 
   if (loading) {
     return (
@@ -46,18 +46,13 @@ const Accessories = () => {
             className="bg-white rounded-lg shadow-lg hover:shadow-2xl transition duration-300 transform hover:scale-105"
           >
             <img
-              src={item.image} // আপনার JSON ফাইলে ইমেজ পাথ থাকতে হবে
+              src={item.image}
               alt={item.name}
               className="w-full h-48 object-cover rounded-t-lg"
             />
             <div className="p-6">
               <h3 className="text-2xl font-semibold text-purple-700">{item.name}</h3>
               <p className="text-lg text-gray-500">${item.price}</p>
-              {/* <button
-                className="mt-4 w-full py-2 text-white bg-purple-600 hover:bg-purple-700 rounded-full text-xl transition duration-300"
-              >
-                Add to Cart
-              </button> */}
             </div>
           </div>
         ))}

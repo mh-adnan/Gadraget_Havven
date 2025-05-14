@@ -11,28 +11,17 @@ const Dashbord = () => {
   };
 
   const handleDeleteFromCart = (item) => {
-    removeFromCart(item); // Function to remove item from the cart
-    // Show notification when an item is removed from the cart
-    toast.info(`${item.product_title} removed from cart!`, {
-      position: "top-right",
-      autoClose: 2000,
-    });
+    removeFromCart(item);
   };
 
   const handleDeleteFromWishlist = (item) => {
-    removeFromWishlist(item); // Function to remove item from the wishlist
-    // Show notification when an item is removed from the wishlist
-    toast.info(`${item.product_title} removed from wishlist!`, {
-      position: "top-right",
-      autoClose: 2000,
-    });
+    removeFromWishlist(item);
   };
 
   return (
     <div className="max-w-7xl mx-auto px-6 py-12 bg-gray-50">
       <h1 className="text-4xl font-extrabold mb-8 text-purple-800 text-center">🛒 Dashboard</h1>
 
-      {/* Tab Navigation */}
       <div className="mb-8 flex justify-center space-x-6">
         <button
           className={`px-8 py-3 text-xl font-medium rounded-full transition duration-300 ${activeTab === 'cart' ? 'bg-purple-700 text-white shadow-lg' : 'bg-gray-300 text-gray-700'} hover:bg-purple-600`}
@@ -48,10 +37,8 @@ const Dashbord = () => {
         </button>
       </div>
 
-      {/* Cart Section */}
       {activeTab === 'cart' && (
         <div className="mb-10">
-          {/* Total Price Above Cart Items */}
           <div className="flex justify-between items-center mb-6">
             <h2 className="text-3xl font-semibold text-green-700">Cart Items</h2>
             <div className="font-bold text-xl text-purple-800">
@@ -84,7 +71,6 @@ const Dashbord = () => {
         </div>
       )}
 
-      {/* Wishlist Section */}
       {activeTab === 'wishlist' && (
         <div>
           <h2 className="text-3xl font-semibold mb-6 text-pink-700">Wishlist</h2>
