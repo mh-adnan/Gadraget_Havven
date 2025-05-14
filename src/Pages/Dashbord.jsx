@@ -3,6 +3,7 @@ import { useCart } from '../Componets/CartContext';
 import { FaTrash } from 'react-icons/fa';
 
 const Dashbord = () => {
+<<<<<<< HEAD
   const { cart, wishlist, getTotalPrice, removeFromCart, removeFromWishlist } = useCart();
   const [activeTab, setActiveTab] = useState('cart');
 
@@ -68,6 +69,12 @@ const Dashbord = () => {
               ))}
             </div>
           )}
+=======
+    return (
+        <div>
+            <h1>db from adnan</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempora, sequi iusto, fugiat consectetur, doloribus repellat repellendus porro aperiam excepturi quas ad. Reiciendis dolores ratione distinctio vitae praesentium obcaecati cum.</p>
+>>>>>>> eee6b273a78b997f550fb6f5fe1cc5ea183eec67
         </div>
       )}
 
