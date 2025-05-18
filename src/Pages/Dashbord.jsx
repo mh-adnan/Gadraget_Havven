@@ -1,11 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useCart } from '../Componets/CartContext'; 
 import { FaTrash } from 'react-icons/fa';
+import { useLocation } from 'react-router-dom';
 
 const Dashbord = () => {
-
   const { cart, wishlist, getTotalPrice, removeFromCart, removeFromWishlist } = useCart();
   const [activeTab, setActiveTab] = useState('cart');
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname === '/db/cart') {
+      setActiveTab('cart');
+    } else if (location.pathname === '/db/wishlist') {
+      setActiveTab('wishlist');
+    }
+  }, [location.pathname]);
 
   const handleTabChange = (tab) => {
     setActiveTab(tab);
@@ -20,7 +29,7 @@ const Dashbord = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-6 py-12 bg-gray-50">
+    <div className="max-w-7xl mx-auto px-6 py-12 bg-gray-50 min-h-screen">
       <h1 className="text-4xl font-extrabold mb-8 text-purple-800 text-center">🛒 Dashboard</h1>
 
       <div className="mb-8 flex justify-center space-x-6">
@@ -38,6 +47,7 @@ const Dashbord = () => {
         </button>
       </div>
 
+      {/* Cart Tab */}
       {activeTab === 'cart' && (
         <div className="mb-10">
           <div className="flex justify-between items-center mb-6">
@@ -69,10 +79,10 @@ const Dashbord = () => {
               ))}
             </div>
           )}
-
         </div>
       )}
 
+      {/* Wishlist Tab */}
       {activeTab === 'wishlist' && (
         <div>
           <h2 className="text-3xl font-semibold mb-6 text-pink-700">Wishlist</h2>
@@ -101,7 +111,6 @@ const Dashbord = () => {
           )}
         </div>
       )}
-    
     </div>
   );
 };

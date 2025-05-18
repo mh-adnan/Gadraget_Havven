@@ -49,21 +49,55 @@ const Navbar = () => {
           </li>
         </ul>
 
+
+
+
+
+
+
+
+
+
+
+
         {/* Cart & Wishlist Buttons */}
         <div className="flex gap-4 items-center">
           <NavLink
-            to="/wishlist"
+            to="/db/wishlist"
             className="text-lg font-semibold border-2 border-white text-white px-4 py-2 rounded-full hover:bg-pink-400 hover:text-black transition duration-300"
           >
             ❤️ Wishlist
           </NavLink>
+
           <NavLink
-            to="/cart"
+            to="/db/cart"
             className="text-lg font-semibold border-2 border-white text-white px-4 py-2 rounded-full hover:bg-yellow-300 hover:text-black transition duration-300"
           >
             🛒 Cart
           </NavLink>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
 
         {/* Mobile Menu */}
         <div className="lg:hidden dropdown dropdown-end">
@@ -87,12 +121,24 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-3 shadow bg-white text-black rounded-box w-56 font-medium"
           >
-            <li><NavLink to="/">Home</NavLink></li>
-            <li><NavLink to="/st">Statistics</NavLink></li>
-            <li><NavLink to="/db">Dashboard</NavLink></li>
-            <li><NavLink to="/ac">Accessories</NavLink></li>
-            <li><NavLink to="/wishlist">❤️ Wishlist</NavLink></li>
-            <li><NavLink to="/cart">🛒 Cart</NavLink></li>
+            <li>
+              <NavLink to="/">Home</NavLink>
+            </li>
+            <li>
+              <NavLink to="/st">Statistics</NavLink>
+            </li>
+            <li>
+              <NavLink to="/db">Dashboard</NavLink>
+            </li>
+            <li>
+              <NavLink to="/ac">Accessories</NavLink>
+            </li>
+            <li>
+              <NavLink to="/wishlist">❤️ Wishlist</NavLink>
+            </li>
+            <li>
+              <NavLink to="/cart">🛒 Cart</NavLink>
+            </li>
           </ul>
         </div>
       </div>

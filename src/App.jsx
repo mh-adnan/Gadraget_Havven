@@ -16,7 +16,12 @@ function App() {
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />
+          {/* Dashboard Routes */}
           <Route path="db" element={<Dashbord />} />
+          <Route path="db/cart" element={<Dashbord />} />
+          <Route path="db/wishlist" element={<Dashbord />} />
+          
+          {/* Other Pages */}
           <Route path="ac" element={<Accessories />} />
           <Route path="st" element={<Statistics />} />
           <Route path="product/:id" element={<ProductDetails />} />
