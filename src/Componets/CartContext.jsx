@@ -86,6 +86,24 @@ const CartProvider = ({ children }) => {
     });
   };
 
+  // Clear all items from cart
+  const clearCart = () => {
+    setCart([]);
+    toast.success("Thanks For Purchasing", {
+      position: "top-center",
+      autoClose: 1000,
+    });
+  };
+
+  // Clear all items from wishlist
+  const clearWishlist = () => {
+    setWishlist([]);
+    toast.success("Wishlist cleared!", {
+      position: "top-top",
+      autoClose: 1000,
+    });
+  };
+
   return (
     <CartContext.Provider
       value={{
@@ -96,6 +114,8 @@ const CartProvider = ({ children }) => {
         addToWishlist,
         removeFromCart,
         removeFromWishlist,
+        clearCart,
+        clearWishlist,
       }}
     >
       {children}
