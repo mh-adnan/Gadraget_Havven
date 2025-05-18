@@ -1,9 +1,17 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+  const navbarBg = isHome
+    ? "bg-gradient-to-r from-purple-700 to-indigo-700"
+    : "bg-gray-800";
+
   return (
-    <div className="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-purple-700 to-indigo-700 bg-opacity-95 shadow-md backdrop-blur-lg border-b border-white/20 transition-all duration-300">
+    <div
+      className={`fixed top-0 left-0 w-full z-50 ${navbarBg} bg-opacity-95 shadow-md backdrop-blur-lg border-b border-white/20 transition-all duration-300`}
+    >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Brand */}
         <NavLink
@@ -49,55 +57,21 @@ const Navbar = () => {
           </li>
         </ul>
 
-
-
-
-
-
-
-
-
-
-
-
         {/* Cart & Wishlist Buttons */}
         <div className="flex gap-4 items-center">
-          <NavLink
-            to="/db/wishlist"
-            className="text-lg font-semibold border-2 border-white text-white px-4 py-2 rounded-full hover:bg-pink-400 hover:text-black transition duration-300"
-          >
-            ❤️ Wishlist
-          </NavLink>
-
           <NavLink
             to="/db/cart"
             className="text-lg font-semibold border-2 border-white text-white px-4 py-2 rounded-full hover:bg-yellow-300 hover:text-black transition duration-300"
           >
             🛒 Cart
           </NavLink>
+          <NavLink
+            to="/db/wishlist"
+            className="text-lg font-semibold border-2 border-white text-white px-4 py-2 rounded-full hover:bg-pink-400 hover:text-black transition duration-300"
+          >
+            ❤️ Wishlist
+          </NavLink>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
 
         {/* Mobile Menu */}
         <div className="lg:hidden dropdown dropdown-end">
