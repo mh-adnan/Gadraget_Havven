@@ -6,7 +6,6 @@ import "react-toastify/dist/ReactToastify.css";
 const CartContext = createContext();
 
 // Custom hook
-// eslint-disable-next-line react-refresh/only-export-components
 export const useCart = () => {
   return useContext(CartContext);
 };
@@ -15,10 +14,12 @@ const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
   const [wishlist, setWishlist] = useState([]);
 
+  // Total price of cart
   const getTotalPrice = () => {
     return cart.reduce((total, item) => total + item.price, 0);
   };
 
+  // Add item to cart
   const addToCart = (item) => {
     if (!item || !item.id) return;
 
@@ -26,52 +27,60 @@ const CartProvider = ({ children }) => {
 
     if (alreadyInCart) {
       toast.warning("This product is already in the cart!", {
-        position: "top-right",
-        autoClose: 2000, // Auto close after 2 seconds
+        position: "top-center",
+        autoClose: 1000,
       });
       return;
     }
 
     setCart((prevCart) => [...prevCart, item]);
-    // Removed "Added to cart" notification.
+
+    toast.success(`${item.product_title} added to cart!`, {
+      position: "top-center",
+      autoClose: 1000,
+    });
   };
 
+  // Add item to wishlist
   const addToWishlist = (item) => {
     if (!item || !item.id) return;
 
     const alreadyInWishlist = wishlist.some((wishItem) => wishItem.id === item.id);
     if (alreadyInWishlist) {
       toast.warning("This product is already in the wishlist!", {
-        position: "top-right",
-        autoClose: 2000, // Auto close after 2 seconds
+        position: "top-center",
+        autoClose: 1000,
       });
       return;
     }
 
     setWishlist((prevWishlist) => [...prevWishlist, item]);
-    toast.success("Added to wishlist successfully!", {
-      position: "top-right",
-      autoClose: 2000, // Auto close after 2 seconds
+
+    toast.success(`${item.product_title} added to wishlist!`, {
+      position: "top-center",
+      autoClose: 1000,
     });
   };
 
+  // Remove from cart
   const removeFromCart = (item) => {
     setCart((prevCart) => {
       const updatedCart = prevCart.filter((cartItem) => cartItem.id !== item.id);
       toast.info(`${item.product_title} removed from cart!`, {
-        position: "top-right",
-        autoClose: 2000, // Auto close after 2 seconds
+        position: "top-center",
+        autoClose: 1000,
       });
       return updatedCart;
     });
   };
 
+  // Remove from wishlist
   const removeFromWishlist = (item) => {
     setWishlist((prevWishlist) => {
       const updatedWishlist = prevWishlist.filter((wishItem) => wishItem.id !== item.id);
       toast.info(`${item.product_title} removed from wishlist!`, {
-        position: "top-right",
-        autoClose: 2000, // Auto close after 2 seconds
+        position: "top-center",
+        autoClose: 1000,
       });
       return updatedWishlist;
     });
@@ -90,7 +99,7 @@ const CartProvider = ({ children }) => {
       }}
     >
       {children}
-      <ToastContainer position="top-right" autoClose={2000} />
+      <ToastContainer position="top-top" autoClose={1000} />
     </CartContext.Provider>
   );
 };
