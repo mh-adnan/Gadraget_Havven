@@ -7,17 +7,22 @@ const Accessories = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('../../public/items.json')
-      .then(response => response.json())
-      .then(data => {
+    fetch('/items.json') // ✅ Corrected path (served from /public)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then((data) => {
         setAccessories(data);
         setLoading(false);
       })
-      .catch(err => {
+      .catch((err) => {
         setError('Failed to load items.');
         setLoading(false);
       });
-  }, []); 
+  }, []);
 
   if (loading) {
     return (
@@ -37,7 +42,9 @@ const Accessories = () => {
 
   return (
     <div className="bg-gray-50 min-h-screen py-12 px-6">
-      <h1 className="text-5xl font-extrabold text-center text-purple-800 mb-12">🔥 Accessories Collection</h1>
+      <h1 className="text-5xl font-extrabold text-center text-purple-800 mb-12">
+        🔥 Accessories Collection
+      </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
         {accessories.map((item) => (

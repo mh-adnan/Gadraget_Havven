@@ -1,12 +1,48 @@
-# React + Vite
+# 🚀 Gadget Haven
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beautifully crafted e-commerce web application where users can explore gadgets, add them to cart or wishlist, and experience a smooth and dynamic user interface.
 
-Currently, two official plugins are available:
+🔗 **Live Site:** [Gadget Haven](https://magnificent-sunshine-1a4605.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🖼️ Preview
+
+> Here are some screenshots of the Gadget Haven app:
+
+![Home Page](./src/assets/SS/1.png)
+![Statistics Page](./src/assets/SS/2.png)
+![Accessories Page](./src/assets/SS/3.png)
+
+
+
+---
+
+## ✨ Features
+
+- 🏠 Home page with featured gadgets
+- 📊 Fancy statistics page with chart animations
+- 💼 Dashboard with cart and wishlist management
+- 🎧 Accessories page with stylish UI
+- ❤️ Add to Wishlist and 🛒 Add to Cart functionality with counter badge
+- 🔍 Search and filtering functionality by category
+- 📱 Fully responsive (mobile-first design)
+- 🎉 React Toastify notifications for all actions
+- 🔒 Smooth routing with React Router
+
+---
+
+## ⚙️ Tech Stack
+
+- **React** (with Hooks & Context API)
+- **React Router DOM**
+- **Tailwind CSS**
+- **React Toastify**
+- **Chart.js / Recharts**
+- **Netlify** (for deployment)
+
+---
+
+
+
