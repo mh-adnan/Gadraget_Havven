@@ -33,20 +33,20 @@ const CategoryWithProducts = () => {
     );
 
   return (
-    <div className="flex bg-gradient-to-r from-purple-50 to-white">
+    <div className="flex bg-gradient-to-r from-purple-50 to-white min-h-screen">
       {/* Sidebar */}
-      <div className="w-52 h-[90vh] bg-white p-4 shadow-lg border-r">
-        <h2 className="text-xl font-bold text-purple-700 mb-6 border-b pb-2">
+      <div className="w-56 h-[90vh] bg-white p-6 shadow-xl border-r border-gray-200 rounded-tr-xl rounded-br-xl sticky top-20">
+        <h2 className="text-2xl font-extrabold text-purple-700 mb-8 border-b-2 border-purple-300 pb-3 tracking-wide">
           Categories
         </h2>
-        <ul className="space-y-2">
+        <ul className="space-y-3">
           {/* <li
             onClick={() => setSelectedCategory("All Products")}
-            className={`cursor-pointer px-3 py-2 rounded-md transition duration-300 font-medium ${
+            className={`cursor-pointer px-4 py-3 rounded-lg transition-all duration-300 font-semibold text-lg ${
               selectedCategory === "All Products"
-                ? "bg-purple-600 text-white shadow"
-                : "hover:bg-purple-100 text-purple-800"
-            } hover:scale-105 transform`}
+                ? "bg-purple-700 text-white shadow-lg shadow-purple-300"
+                : "text-purple-700 hover:bg-purple-100 hover:text-purple-900"
+            } transform hover:scale-105`}
           >
             All Products
           </li> */}
@@ -54,11 +54,11 @@ const CategoryWithProducts = () => {
             <li
               key={cat.id}
               onClick={() => setSelectedCategory(cat.category)}
-              className={`cursor-pointer px-3 py-2 rounded-md transition duration-300 font-medium ${
+              className={`cursor-pointer px-4 py-3 rounded-lg transition-all duration-300 font-semibold text-lg ${
                 selectedCategory === cat.category
-                  ? "bg-purple-600 text-white shadow"
-                  : "hover:bg-purple-100 text-purple-800"
-              } hover:scale-105 transform`}
+                  ? "bg-purple-700 text-white shadow-lg shadow-purple-300"
+                  : "text-purple-700 hover:bg-purple-100 hover:text-purple-900"
+              } transform hover:scale-105`}
             >
               {cat.category}
             </li>
@@ -68,7 +68,7 @@ const CategoryWithProducts = () => {
 
       {/* Main Content */}
       <div className="flex-1 p-8">
-        {/* Search bar */}
+        {/* Search Bar */}
         <div className="mb-6 flex justify-between items-center">
           <h1 className="text-2xl font-bold text-purple-700">
             {selectedCategory}
@@ -107,7 +107,6 @@ const CategoryWithProducts = () => {
                       ${product.price}
                     </p>
                   </div>
-
                   <NavLink
                     to={`/product/${product.id}`}
                     className="mt-auto inline-block text-sm px-3 py-1.5 rounded-md bg-gradient-to-r from-indigo-700 via-purple-600 to-purple-500 text-white shadow hover:scale-105 transition duration-300"
