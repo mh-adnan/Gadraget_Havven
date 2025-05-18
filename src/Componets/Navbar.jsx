@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
+import { useCart } from "../Componets/CartContext"; 
 
 const Navbar = () => {
   const location = useLocation();
@@ -7,6 +8,8 @@ const Navbar = () => {
   const navbarBg = isHome
     ? "bg-gradient-to-r from-purple-700 to-indigo-700"
     : "bg-gray-800";
+
+  const { cart, wishlist } = useCart(); 
 
   return (
     <div
@@ -61,15 +64,25 @@ const Navbar = () => {
         <div className="flex gap-4 items-center">
           <NavLink
             to="/db/cart"
-            className="text-lg font-semibold border-2 border-white text-white px-4 py-2 rounded-full hover:bg-yellow-300 hover:text-black transition duration-300"
+            className="relative text-lg font-semibold border-2 border-white text-white px-4 py-2 rounded-full hover:bg-yellow-300 hover:text-black transition duration-300"
           >
             🛒 Cart
+            {cart.length > 0 && (
+              <span className="absolute -top-2 -right-2 bg-yellow-400 text-black text-xs font-bold px-2 py-0.5 rounded-full">
+                {cart.length}
+              </span>
+            )}
           </NavLink>
           <NavLink
             to="/db/wishlist"
-            className="text-lg font-semibold border-2 border-white text-white px-4 py-2 rounded-full hover:bg-pink-400 hover:text-black transition duration-300"
+            className="relative text-lg font-semibold border-2 border-white text-white px-4 py-2 rounded-full hover:bg-pink-400 hover:text-black transition duration-300"
           >
             ❤️ Wishlist
+            {wishlist.length > 0 && (
+              <span className="absolute -top-2 -right-2 bg-pink-400 text-black text-xs font-bold px-2 py-0.5 rounded-full">
+                {wishlist.length}
+              </span>
+            )}
           </NavLink>
         </div>
 
@@ -108,10 +121,10 @@ const Navbar = () => {
               <NavLink to="/ac">Accessories</NavLink>
             </li>
             <li>
-              <NavLink to="/wishlist">❤️ Wishlist</NavLink>
+              <NavLink to="/db/wishlist">❤️ Wishlist ({wishlist.length})</NavLink>
             </li>
             <li>
-              <NavLink to="/cart">🛒 Cart</NavLink>
+              <NavLink to="/db/cart">🛒 Cart ({cart.length})</NavLink>
             </li>
           </ul>
         </div>

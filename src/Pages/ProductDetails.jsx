@@ -2,7 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import items from "../../public/items.json";
 import { FaStar, FaShoppingCart, FaArrowLeft, FaHeart } from "react-icons/fa";
 import { useCart } from "../Componets/CartContext";
-import { toast } from "react-toastify"; // ✅ Add this
+import { toast } from "react-toastify"; 
 
 const ProductDetails = () => {
   const { id } = useParams();

@@ -7,7 +7,7 @@ import CategorySidebar from "../Componets/CategoryWithProducts";
 const MainLayout = () => {
   const location = useLocation();
 
-  // Check if the current route is the home page ("/")
+
   const isHomePage = location.pathname === "/";
 
   // Dynamic Title Update
@@ -36,7 +36,7 @@ const MainLayout = () => {
       <Navbar />
       <div className="min-h-[calc(100vh-249px)] py-12 container mx-auto px-12">
         <Outlet />
-        {isHomePage && <CategorySidebar />} {/* Show CategorySidebar only on Home page */}
+        {isHomePage && <CategorySidebar />} 
       </div>
       <Footer />
     </div>
