@@ -2,7 +2,7 @@
 
 A beautifully crafted e-commerce web application where users can explore gadgets, add them to cart or wishlist, and experience a smooth and dynamic user interface.
 
-🔗 **Live Site:** [Gadget Haven](https://magnificent-sunshine-1a4605.netlify.app/)
+🔗 **Live Site:** [Gadget Haven](https://calm-druid-026b5d.netlify.app/)
 
 ---
 
