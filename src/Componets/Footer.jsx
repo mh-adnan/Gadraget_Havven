@@ -1,4 +1,9 @@
 import React from 'react';
+import fb from"../assets/social/Fb.png"
+import yt from"../assets/social/Youtube_logo.png"
+import insta from"../assets/social/insta .jpeg"
+import twit from"../assets/social/twitter.png"
+import logo from"../assets/logo3.png"
 
 const Footer = () => {
   return (
@@ -8,7 +13,7 @@ const Footer = () => {
         {/* Logo and Title */}
         <div className="flex items-center space-x-4">
           <img
-            src="/src/assets/logo3.png"
+            src={logo}
             alt="Gadget Haven Logo"
             className="w-20 h-20 object-contain rounded-xl"
           />
@@ -24,28 +29,28 @@ const Footer = () => {
         <div className="flex space-x-8 pt-4">
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
             <img
-              src="/src/assets/social/twitter.png"
+              src={twit}
               alt="Twitter"
               className="w-12 h-12 rounded-full transition-all duration-500 transform hover:scale-125 hover:ring-4 hover:ring-purple-500 hover:shadow-lg hover:shadow-purple-700"
             />
           </a>
           <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
             <img
-              src="/src/assets/social/Youtube_logo.png"
+              src={yt}
               alt="YouTube"
               className="w-12 h-12 rounded-full transition-all duration-500 transform hover:scale-125 hover:ring-4 hover:ring-red-500 hover:shadow-lg hover:shadow-red-700"
             />
           </a>
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
             <img
-              src="/src/assets/social/Fb.png"
+              src={fb}
               alt="Facebook"
               className="w-12 h-12 rounded-full transition-all duration-500 transform hover:scale-125 hover:ring-4 hover:ring-blue-500 hover:shadow-lg hover:shadow-blue-700"
             />
           </a>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <img
-              src="/src/assets/social/insta .jpeg"
+              src={insta}
               alt="Instagram"
               className="w-12 h-12 rounded-full transition-all duration-500 transform hover:scale-125 hover:ring-4 hover:ring-pink-500 hover:shadow-lg hover:shadow-pink-700"
             />
