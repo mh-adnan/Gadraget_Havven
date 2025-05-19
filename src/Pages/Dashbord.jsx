@@ -15,6 +15,7 @@ const Dashbord = () => {
 
   const [activeTab, setActiveTab] = useState("cart");
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [sortDescending, setSortDescending] = useState(false); // sort toggle
   const location = useLocation();
 
   useEffect(() => {
@@ -39,7 +40,7 @@ const Dashbord = () => {
 
   const handlePurchaseClick = () => {
     if (purchaseCart()) {
-      setIsModalOpen(true); // modal open হবে purchase সফল হলে
+      setIsModalOpen(true);
     }
   };
 
@@ -80,39 +81,57 @@ const Dashbord = () => {
       {activeTab === "cart" && (
         <div className="mb-10">
           <div className="flex justify-between items-center mb-6">
-            <h2 className="text-3xl font-semibold text-green-700">Cart Items</h2>
-            <div className="font-bold text-xl text-purple-800">
-              Total: ${getTotalPrice().toFixed(2)}
+            <h2 className="text-3xl font-semibold text-green-700">
+              Cart Items
+            </h2>
+            <div className="flex items-center gap-4">
+              <button
+                onClick={() => setSortDescending(!sortDescending)}
+                className="px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition"
+              >
+                {sortDescending ? "Unsort" : "Sort by Price ↓"}
+              </button>
+
+              <div className="font-bold text-xl text-purple-800">
+                Total: ${getTotalPrice().toFixed(2)}
+              </div>
             </div>
           </div>
           {cart.length === 0 ? (
-            <p className="text-gray-500 text-lg text-center">No items in cart.</p>
+            <p className="text-gray-500 text-lg text-center">
+              No items in cart.
+            </p>
           ) : (
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-              {cart.map((item, index) => (
-                <div
-                  key={index}
-                  className="flex justify-between items-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300"
-                >
-                  <div className="flex items-center gap-6">
-                    <img
-                      src={item.image}
-                      alt={item.product_title}
-                      className="w-20 h-20 object-cover rounded-md shadow-lg"
-                    />
-                    <div>
-                      <h3 className="font-semibold text-lg">{item.product_title}</h3>
-                      <p className="text-sm text-gray-600">${item.price}</p>
-                    </div>
-                  </div>
-                  <button
-                    className="text-red-500 hover:text-red-700 transition duration-300"
-                    onClick={() => handleDeleteFromCart(item)}
+              {cart
+                .slice()
+                .sort((a, b) => (sortDescending ? b.price - a.price : 0))
+                .map((item, index) => (
+                  <div
+                    key={index}
+                    className="flex justify-between items-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300"
                   >
-                    <FaTrash className="text-2xl" />
-                  </button>
-                </div>
-              ))}
+                    <div className="flex items-center gap-6">
+                      <img
+                        src={item.image}
+                        alt={item.product_title}
+                        className="w-20 h-20 object-cover rounded-md shadow-lg"
+                      />
+                      <div>
+                        <h3 className="font-semibold text-lg">
+                          {item.product_title}
+                        </h3>
+                        <p className="text-sm text-gray-600">${item.price}</p>
+                      </div>
+                    </div>
+                    <button
+                      className="text-red-500 hover:text-red-700 transition duration-300"
+                      onClick={() => handleDeleteFromCart(item)}
+                    >
+                      <FaTrash className="text-2xl" />
+                    </button>
+                  </div>
+                ))}
             </div>
           )}
 
@@ -131,9 +150,13 @@ const Dashbord = () => {
       {/* Wishlist Tab */}
       {activeTab === "wishlist" && (
         <div>
-          <h2 className="text-3xl font-semibold mb-6 text-pink-700">Wishlist</h2>
+          <h2 className="text-3xl font-semibold mb-6 text-pink-700">
+            Wishlist
+          </h2>
           {wishlist.length === 0 ? (
-            <p className="text-gray-500 text-lg text-center">No items in wishlist.</p>
+            <p className="text-gray-500 text-lg text-center">
+              No items in wishlist.
+            </p>
           ) : (
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {wishlist.map((item, index) => (
@@ -148,7 +171,9 @@ const Dashbord = () => {
                       className="w-20 h-20 object-cover rounded-md shadow-lg"
                     />
                     <div>
-                      <h3 className="font-semibold text-lg">{item.product_title}</h3>
+                      <h3 className="font-semibold text-lg">
+                        {item.product_title}
+                      </h3>
                       <p className="text-sm text-gray-600">${item.price}</p>
                     </div>
                   </div>

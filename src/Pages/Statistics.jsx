@@ -9,8 +9,8 @@ const Statistic = () => {
 
   useEffect(() => {
     toast.success("Statistics Loaded Successfully!", {
-      position: "top-right",
-      autoClose: 2500,
+      position: "top-center",
+      autoClose: 2000,
       pauseOnHover: true,
       theme: "colored",
     });
